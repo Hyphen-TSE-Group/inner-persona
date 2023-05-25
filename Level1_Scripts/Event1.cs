@@ -4,6 +4,11 @@ using UnityEngine;
 using TMPro;
 // public TMP_Text hint_txt;
 
+
+/**This script is for an event in Unity game engine. 
+It sets the text of two TextMeshPro text objects and plays an audio clip. 
+And starts an animation when the player enters the trigger area of the game object. **/
+
 public class Event1 : MonoBehaviour
 
 {
@@ -24,6 +29,11 @@ public bool trigger= true;
     // {
         
     // }
+
+
+/**This function is called when the player enters the trigger area of the game object
+It starts a coroutine function called waitForSec which waits for 1.7 seconds 
+And then sets the text of TextMeshPro text objects and plays an audio clip and starts an animation. **/
 
      private void OnTriggerEnter(Collider other) {
 
